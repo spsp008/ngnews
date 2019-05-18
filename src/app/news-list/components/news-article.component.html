@@ -6,7 +6,7 @@
       </div>
       <div class="flip-card-back">
         <a *ngIf="article.source.name" class="source" (click)="redirect(article)">Source: {{article.source.name}}</a>
-        <a href="javascript:;" *ngIf="!article.source.name" (click)="redirect(article)">See full article.</a>
+        <a *ngIf="!article.source.name" class="source" (click)="redirect(article)">See full article.</a>
         <p>{{article.description}}</p>
       </div>
     </div>
