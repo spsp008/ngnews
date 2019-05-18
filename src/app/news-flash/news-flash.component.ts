@@ -8,7 +8,7 @@ import { Article } from '../models/article';
   templateUrl: './news-flash.component.html'
 })
 export class NewsFlashComponent implements OnInit {
-  articles: Article[];
+  articles: Article[] = [];
 
   constructor(private _newsService: NewsService) {}
 
