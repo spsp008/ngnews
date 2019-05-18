@@ -1,9 +1,9 @@
 <div id="flash">
   <div *ngIf="articles.length">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" *ngFor="let article of articles;let i = index" [attr.data-slide-to]="i" [ngClass]="i == 0 ? 'active' : ''"></li>
-        </ol>
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" *ngFor="let article of articles;let i = index" [attr.data-slide-to]="i" [ngClass]="i == 0 ? 'active' : ''"></li>
+      </ol>
 
       <div class="carousel-inner" role="listbox">
 
