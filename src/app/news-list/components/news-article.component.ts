@@ -11,7 +11,15 @@ export class NewsArticleComponent implements OnInit {
   @Input()
   article: Article;
 
-  ngOnInit() {
+  background: any;
 
+  ngOnInit() {
+    this.background = {
+      'background-image': `url(${this.article.urlToImage})`
+    };
+  }
+
+  redirect(article: Article) {
+    window.open(article.url, "_blank");
   }
 }

@@ -1,5 +1,42 @@
 .article {
-  // height: 180px;
-  text-overflow: ellipsis;
+  background-color: #5a2121;
   text-align: center;
+  padding: 2px;
+  .flip-card {
+    text-overflow: clip;;
+    overflow: hidden;
+    height: 150px;
+    font-family: "Times New Roman";
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    font-size: 18px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    color: white;
+    text-align: center;
+  }
+
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 15px;
+    .source {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
 }

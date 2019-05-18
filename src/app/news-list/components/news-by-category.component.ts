@@ -1,22 +1,13 @@
-import { Component, OnInit, Input } from '@angular/core';
-// import { NewsService } from '../../services/news.service';
-// import { Article } from '../../models/article';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-news-by-category',
   styleUrls: [ './news-by-category.scss' ],
   templateUrl: './news-by-category.component.html'
 })
-export class NewsByCategoryComponent implements OnInit {
+export class NewsByCategoryComponent {
 
   @Input()
   categories: string[];
 
-  // constructor(private _newsService: NewsService) {}
-
-  ngOnInit() {
-    // this._newsService.getTopHeadlines().subscribe((news) => {
-    //   this.articles = news.articles;
-    // });
-  }
 }

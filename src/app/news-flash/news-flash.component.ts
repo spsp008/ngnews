@@ -17,4 +17,8 @@ export class NewsFlashComponent implements OnInit {
       this.articles = news.articles;
     });
   }
+
+  redirect(article: Article) {
+    window.open(article.url, "_blank");
+  }
 }

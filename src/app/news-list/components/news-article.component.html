@@ -1,3 +1,14 @@
 <div class="article" *ngIf="article">
-  <h2>{{article.title}}</h2>
+  <div class="flip-card" [ngStyle]="background">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <p>{{article.title}}</p>
+      </div>
+      <div class="flip-card-back">
+        <a *ngIf="article.source.name" class="source" (click)="redirect(article)">Source: {{article.source.name}}</a>
+        <a href="javascript:;" *ngIf="!article.source.name" (click)="redirect(article)">See full article.</a>
+        <p>{{article.description}}</p>
+      </div>
+    </div>
+  </div>
 <div>

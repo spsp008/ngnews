@@ -9,7 +9,7 @@
 
         <div *ngFor="let article of articles; let i = index" [ngClass]="i == 0 ? 'item active' : 'item'">
           <img [src]="article.urlToImage">
-          <div class="carousel-caption">
+          <div (click)="redirect(article)" class="carousel-caption">
             <p>{{article.title}}</p>
           </div>
         </div>
