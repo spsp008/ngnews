@@ -25,13 +25,18 @@ export class NewsService {
     )
   }
 
-  getTopHeadlines(): Observable<any> {
-    const urlParams = {
+  getTopHeadlines(params?: any): Observable<any> {
+    let urlParams = {
       params: {
         country: 'us',
         apiKey: environment.API_KEY
       }
     };
+    if (params) {
+      urlParams = Object.assign({}, urlParams, {
+        params: Object.assign({}, urlParams.params, params)
+      })
+    }
     return this.http
     .get(`${environment.API_URL}/top-headlines`, urlParams).pipe(
       map((response) => response)

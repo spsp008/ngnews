@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NewsListComponent } from './news-list.component';
+import { NewsByCategoryComponent } from './components/news-by-category.component';
+import { NewsCategoryComponent } from './components/news-category.component';
+import { NewsArticleComponent } from './components/news-article.component';
 
 @NgModule({
   imports: [
@@ -9,7 +12,10 @@ import { NewsListComponent } from './news-list.component';
     RouterModule
   ],
   declarations: [
-    NewsListComponent
+    NewsListComponent,
+    NewsByCategoryComponent,
+    NewsCategoryComponent,
+    NewsArticleComponent
   ],
   exports: [
     NewsListComponent
