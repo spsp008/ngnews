@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderModule } from './header/header.module';
 import { NewsFlashModule } from './news-flash/news-flash.module';
 import { NewsListModule } from './news-list/news-list.module';
+import { FooterModule } from './footer/footer.module';
 
 import { AppComponent } from './app.component';
 
@@ -19,7 +20,8 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     HeaderModule,
     NewsFlashModule,
-    NewsListModule
+    NewsListModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
