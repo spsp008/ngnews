@@ -1,5 +1,11 @@
 .category {
   margin-top: 8px;
+  h3 {
+    border-left: 3px solid red;
+    b {
+      margin-left: 4px;
+    }
+  }
 
   .column {
     float: left;

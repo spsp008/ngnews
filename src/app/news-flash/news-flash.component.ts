@@ -13,7 +13,7 @@ export class NewsFlashComponent implements OnInit {
   constructor(private _newsService: NewsService) {}
 
   ngOnInit() {
-    this._newsService.getTopHeadlines().subscribe((news) => {
+    this._newsService.getTopHeadlines({pageSize: 10}).subscribe((news) => {
       this.articles = news.articles;
     });
   }

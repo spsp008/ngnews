@@ -9,7 +9,7 @@ import { Article } from '../models/article';
 })
 export class NewsListComponent implements OnInit {
   articles: Article[];
-  categories: string[] = ['business', 'science', 'sports', 'technology' ];
+  categories: string[] = ['business', 'science', 'sports', 'technology'];
 
   constructor(private _newsService: NewsService) {}
 
