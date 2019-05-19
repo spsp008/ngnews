@@ -1,0 +1,27 @@
+.category {
+  margin-top: 8px;
+  h3 {
+    margin-top: 0.5124450951683748vw;
+    margin-bottom: 0.36603221083455345vw;
+    color: white;
+    font-size: 1.7569546120058566vw;
+    border-left: 0.2562225475841874vw solid red;
+    b {
+      margin-left: 4px;
+    }
+  }
+
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #3a0202;
+  }
+
+  .column {
+    float: left;
+    width: 20%;
+    padding: 0.7320644216691069vw;
+    height: 13.90922401171303vw;
+    // border: 1px solid #FFF;
+  }
+}

@@ -1,0 +1,9 @@
+<div class="headlines">
+  <form [formGroup]="form" class="form">
+    <select formControlName="country">
+      <option *ngFor="let country of countries" [value]="country.code">{{country.name}}</option>
+    </select>
+  </form>
+  <app-news-flash [articles]="flashArticles"></app-news-flash>
+  <app-news-list [headLinesForm]="form" [countryCode]="form.controls.country.value"></app-news-list>
+</div>

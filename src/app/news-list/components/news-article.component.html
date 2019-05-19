@@ -1,0 +1,14 @@
+<div class="article" *ngIf="article">
+  <div class="flip-card">
+    <div class="flip-card-inner" [ngStyle]="background">
+      <div class="flip-card-front">
+        <p>{{article.title}}</p>
+      </div>
+      <div class="flip-card-back">
+        <a *ngIf="article.source.name" class="source" (click)="redirect(article)"><u>Source: {{article.source.name}}</u></a>
+        <a *ngIf="!article.source.name" class="source" (click)="redirect(article)"><u>See full article.</u></a>
+        <p>{{article.description}}</p>
+      </div>
+    </div>
+  </div>
+<div>
