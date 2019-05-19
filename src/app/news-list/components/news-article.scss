@@ -1,21 +1,20 @@
 .article {
-  // background-color: #312c2c;
   text-align: center;
   text-shadow: none;
-  padding: 2px;
+  padding: 0.14641288433382138vw;
   .flip-card {
     text-overflow: ellipsis;
     overflow: hidden;
-    height: 150px;
+    height: 10.980966325036603vw;
     font-family: Arial, Helvetica, sans-serif;
     perspective: 1000px;
   }
 
   .flip-card-inner {
-    font-size: 18px;
+    font-size: 1.3177159590043923vw;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    height: 150px;
+    height: 10.980966325036603vw;
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -32,7 +31,7 @@
   .flip-card-front {
     color: white;
     text-align: center;
-    height: 150px;
+    height: 10.980966325036603vw;
     width: 100%;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     p {
@@ -41,12 +40,12 @@
   }
 
   .flip-card-back {
-    height: 150px;
+    height:10.980966325036603vw;
     width: 100%;
     color: black;
     background-color: white;
     transform: rotateY(180deg);
-    font-size: 15px;
+    font-size: 1.0980966325036603vw;
     font-style: italic;
     .source {
       cursor: pointer;
