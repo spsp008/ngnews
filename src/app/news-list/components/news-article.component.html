@@ -1,7 +1,7 @@
 <div class="article" *ngIf="article">
   <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front" [ngStyle]="background">
+    <div class="flip-card-inner" [ngStyle]="background">
+      <div class="flip-card-front">
         <p>{{article.title}}</p>
       </div>
       <div class="flip-card-back">
