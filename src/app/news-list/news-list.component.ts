@@ -11,10 +11,10 @@ export class NewsListComponent implements OnInit {
   articles: Article[];
   categories: string[] = ['business', 'science', 'sports', 'technology'];
 
-  constructor(private _newsService: NewsService) {}
+  constructor(private newsService: NewsService) {}
 
   ngOnInit() {
-    this._newsService.getEveryThing().subscribe((news) => {
+    this.newsService.getEveryThing().subscribe((news) => {
       this.articles = news.articles;
     });
   }

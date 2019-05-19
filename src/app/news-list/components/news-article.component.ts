@@ -20,6 +20,6 @@ export class NewsArticleComponent implements OnInit {
   }
 
   redirect(article: Article) {
-    window.open(article.url, "_blank");
+    window.open(article.url, '_blank');
   }
 }

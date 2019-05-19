@@ -10,15 +10,15 @@ import { Article } from '../models/article';
 export class NewsFlashComponent implements OnInit {
   articles: Article[] = [];
 
-  constructor(private _newsService: NewsService) {}
+  constructor(private newsService: NewsService) {}
 
   ngOnInit() {
-    this._newsService.getTopHeadlines({pageSize: 10}).subscribe((news) => {
+    this.newsService.getTopHeadlines({pageSize: 10}).subscribe((news) => {
       this.articles = news.articles;
     });
   }
 
   redirect(article: Article) {
-    window.open(article.url, "_blank");
+    window.open(article.url, '_blank');
   }
 }

@@ -14,10 +14,10 @@ export class NewsCategoryComponent implements OnInit {
 
   articles: Article[] = [];
 
-  constructor(private _newsService: NewsService) {}
+  constructor(private newsService: NewsService) {}
 
   ngOnInit() {
-    this._newsService.getTopHeadlines({category: this.category, pageSize: 5}).subscribe((news) => {
+    this.newsService.getTopHeadlines({category: this.category, pageSize: 5}).subscribe((news) => {
       this.articles = news.articles;
     });
   }
