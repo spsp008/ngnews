@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { NewsService } from '../services/news.service';
+import { Article } from '../models/article';
 
 @Component({
   selector: 'app-top-headlines',

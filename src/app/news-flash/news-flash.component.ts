@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Article } from '../models/article';
 
 @Component({
@@ -6,7 +6,7 @@ import { Article } from '../models/article';
   styleUrls: [ './news-flash.scss' ],
   templateUrl: './news-flash.component.html'
 })
-export class NewsFlashComponent implements OnInit {
+export class NewsFlashComponent {
 
   @Input()
   articles: Article[];
