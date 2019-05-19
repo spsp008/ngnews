@@ -30,6 +30,7 @@ export class NewsCategoryComponent implements OnInit {
   }
 
   getCategoryNews(country: string) {
+    this.articles = [];
     this.newsService.getTopHeadlines({category: this.category, country, pageSize: 5}).subscribe((news) => {
       this.articles = news.articles;
     });

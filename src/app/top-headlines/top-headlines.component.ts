@@ -38,6 +38,7 @@ export class TopHeadlinesComponent implements OnInit {
   }
 
   getFlashArticles(country: string) {
+    this.flashArticles = [];
     this.newsService.getTopHeadlines({pageSize: 10, country}).subscribe((news) => {
       this.flashArticles = news.articles;
     });
