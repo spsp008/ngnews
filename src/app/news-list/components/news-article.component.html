@@ -5,8 +5,8 @@
         <p>{{article.title}}</p>
       </div>
       <div class="flip-card-back">
-        <a *ngIf="article.source.name" class="source" (click)="redirect(article)">Source: {{article.source.name}}</a>
-        <a *ngIf="!article.source.name" class="source" (click)="redirect(article)">See full article.</a>
+        <a *ngIf="article.source.name" class="source" (click)="redirect(article)"><u>Source: {{article.source.name}}</u></a>
+        <a *ngIf="!article.source.name" class="source" (click)="redirect(article)"><u>See full article.</u></a>
         <p>{{article.description}}</p>
       </div>
     </div>
