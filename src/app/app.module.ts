@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderModule } from './header/header.module';
+import { TopHeadlinesModule } from './top-headlines/top-headlines.module';
 import { NewsFlashModule } from './news-flash/news-flash.module';
 import { NewsListModule } from './news-list/news-list.module';
 import { FooterModule } from './footer/footer.module';
@@ -19,6 +20,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     AppRoutingModule,
     HeaderModule,
+    TopHeadlinesModule,
     NewsFlashModule,
     NewsListModule,
     FooterModule
