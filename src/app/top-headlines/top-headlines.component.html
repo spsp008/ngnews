@@ -1,2 +1,7 @@
-<app-news-flash></app-news-flash>
-<app-news-list></app-news-list>
+<form [formGroup]="form" class="form">
+  <select formControlName="country">
+    <option *ngFor="let country of countries" [value]="country.code">{{country.name}}</option>
+  </select>
+</form>
+<app-news-flash [articles]="flashArticles"></app-news-flash>
+<app-news-list [countryCode]="form.controls.country.value"></app-news-list>

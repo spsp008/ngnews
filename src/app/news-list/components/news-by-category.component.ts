@@ -10,4 +10,7 @@ export class NewsByCategoryComponent {
   @Input()
   categories: string[];
 
+  @Input()
+  countryCode: string;
+
 }

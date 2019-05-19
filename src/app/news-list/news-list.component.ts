@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NewsService } from '../services/news.service';
 import { Article } from '../models/article';
 
@@ -8,6 +8,10 @@ import { Article } from '../models/article';
   templateUrl: './news-list.component.html'
 })
 export class NewsListComponent implements OnInit {
+
+  @Input()
+  countryCode: string;
+
   articles: Article[];
   categories: string[] = ['business', 'science', 'sports', 'entertainmemt', 'technology'];
 

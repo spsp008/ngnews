@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { NewsService } from '../services/news.service';
+import { Component, OnInit, Input } from '@angular/core';
 import { Article } from '../models/article';
 
 @Component({
@@ -8,15 +7,9 @@ import { Article } from '../models/article';
   templateUrl: './news-flash.component.html'
 })
 export class NewsFlashComponent implements OnInit {
-  articles: Article[] = [];
 
-  constructor(private newsService: NewsService) {}
-
-  ngOnInit() {
-    this.newsService.getTopHeadlines({pageSize: 10}).subscribe((news) => {
-      this.articles = news.articles;
-    });
-  }
+  @Input()
+  articles: Article[];
 
   redirect(article: Article) {
     window.open(article.url, '_blank');

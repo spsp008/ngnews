@@ -12,12 +12,15 @@ export class NewsCategoryComponent implements OnInit {
   @Input()
   category: string;
 
+  @Input()
+  countryCode: string;
+
   articles: Article[] = [];
 
   constructor(private newsService: NewsService) {}
 
   ngOnInit() {
-    this.newsService.getTopHeadlines({category: this.category, pageSize: 5}).subscribe((news) => {
+    this.newsService.getTopHeadlines({category: this.category, country: this.countryCode, pageSize: 5}).subscribe((news) => {
       this.articles = news.articles;
     });
   }

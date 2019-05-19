@@ -1,0 +1,18 @@
+.form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 5px;
+  z-index: 10000;
+  select {
+    font-size: 30px;
+    color: #FFF;
+    outline: none;
+    background-color: transparent;
+    option {
+      background-color: #555;
+      color: white;
+      font-size: 15px;
+    }
+  }
+}
