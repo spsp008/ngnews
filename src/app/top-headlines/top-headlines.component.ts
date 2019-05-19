@@ -11,6 +11,7 @@ export class TopHeadlinesComponent implements OnInit {
 
   form: FormGroup;
   flashArticles: Article[] = [];
+
   countries: {code: string, name: string}[] = [
     {code: 'gb', name: 'Britain'},
     {code: 'cn', name: 'China'},
@@ -33,11 +34,11 @@ export class TopHeadlinesComponent implements OnInit {
 
     this.form.controls.country.valueChanges.subscribe((country: string) => {
       this.getFlashArticles(country);
-    })
+    });
   }
 
   getFlashArticles(country: string) {
-    this.newsService.getTopHeadlines({pageSize: 10, country: country}).subscribe((news) => {
+    this.newsService.getTopHeadlines({pageSize: 10, country}).subscribe((news) => {
       this.flashArticles = news.articles;
     });
   }
