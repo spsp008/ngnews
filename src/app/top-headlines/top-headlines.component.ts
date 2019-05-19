@@ -27,7 +27,7 @@ export class TopHeadlinesComponent implements OnInit {
 
   ngOnInit() {
     this.form = this.formBuilder.group({
-      country: 'in'
+      country: 'us'
     });
 
     this.getFlashArticles(this.form.controls.country.value);
