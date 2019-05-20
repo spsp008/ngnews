@@ -4,6 +4,13 @@ Application to view news stories from sources around the world.
 
 Built with [Angular](https://github.com/angular/angular) as frontend JavaScript framework.
 
+![page1](https://user-images.githubusercontent.com/42312902/58002321-abd8c180-7afb-11e9-95ca-0a53ec8a64c5.png)
+
+![page2](https://user-images.githubusercontent.com/42312902/58002351-bbf0a100-7afb-11e9-97e5-a8b5fd820026.png)
+
+![page3](https://user-images.githubusercontent.com/42312902/58002362-c448dc00-7afb-11e9-95f2-0cafcf53cfa4.png)
+
+
 ## Requirements
 
 -   [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9
